@@ -1,0 +1,55 @@
+<script>
+    // Halaman ini hanya potongan konten yang dimuat lewat AJAX ke #kontenUtama di index.html.
+    // Jika dibuka langsung (tanpa layout utama), arahkan ke index.html agar CSS & sidebar ikut tampil.
+    if (!document.getElementById("kontenUtama")) {
+        location.replace("../index.html#tugas");
+    }
+</script>
+
+<header class="topbar">
+    <div>
+        <p class="breadcrumb">Workspace / Daftar Tugas</p>
+        <h1>Daftar Tugas</h1>
+    </div>
+
+    <div class="user-profile">
+        <div class="avatar">K</div>
+        <div>
+            <strong>Khairin</strong>
+            <small>Mahasiswa D4 MI</small>
+        </div>
+    </div>
+</header>
+
+<section class="welcome-section">
+    <div>
+        <p class="eyebrow">STUDENT WORKSPACE</p>
+        <h2>Pantau semua tugas kuliahmu.</h2>
+        <p>
+            Periksa deadline, tandai tugas yang selesai, dan tetap
+            teratur sepanjang semester.
+        </p>
+        <a href="./pages/form-tugas.html"
+           class="btn-primary"
+           data-page="form-tugas">
+            + Tambah Tugas
+        </a>
+    </div>
+
+    <div class="welcome-decoration">CP</div>
+</section>
+
+<section class="content-card">
+    <div class="section-heading">
+        <div>
+            <h2>Semua Tugas</h2>
+            <p>Kelola dan pantau seluruh tugas kuliahmu.</p>
+        </div>
+    </div>
+
+    <div id="daftarSemuaTugas" class="task-list"></div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 ClassPlan — Academic Task Manager</p>
+</footer>
