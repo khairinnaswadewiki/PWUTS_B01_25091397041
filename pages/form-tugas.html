@@ -1,0 +1,57 @@
+<section class="content-card">
+    <div class="topbar">
+        <div>
+            <p class="breadcrumb">Workspace / Tambah Tugas</p>
+            <h1>Tambah Tugas</h1>
+        </div>
+    </div>
+
+    <div class="section-heading">
+        <div>
+            <h2>Informasi Tugas</h2>
+            <p>Lengkapi formulir berikut untuk menambahkan tugas baru.</p>
+        </div>
+    </div>
+
+    <form id="formTugas" class="task-form" novalidate>
+        <div class="form-group">
+            <label for="mataKuliah">Mata Kuliah *</label>
+            <input type="text" id="mataKuliah" name="mataKuliah"
+                   placeholder="Contoh: Pemrograman Web" required>
+            <small class="error-message" id="errorMataKuliah"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="judul">Judul Tugas *</label>
+            <input type="text" id="judul" name="judul"
+                   placeholder="Masukkan judul tugas" required>
+            <small class="error-message" id="errorJudul"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="deskripsi">Deskripsi Tugas *</label>
+            <textarea id="deskripsi" name="deskripsi" rows="4"
+                      placeholder="Jelaskan tugas yang harus dikerjakan"
+                      required></textarea>
+            <small class="error-message" id="errorDeskripsi"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="deadline">Deadline *</label>
+            <input type="datetime-local" id="deadline" name="deadline" required>
+            <small class="error-message" id="errorDeadline"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="link">Link Pengumpulan</label>
+            <input type="url" id="link" name="link"
+                   placeholder="https://contoh.com">
+            <small class="error-message" id="errorLink"></small>
+        </div>
+
+        <div class="form-actions">
+            <button type="reset" class="btn-reset">Reset</button>
+            <button type="submit" class="btn-submit">Simpan Tugas</button>
+        </div>
+    </form>
+</section>
